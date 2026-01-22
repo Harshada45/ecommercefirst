@@ -10,6 +10,7 @@ import { useNavigate } from "react-router";
 import { CartContext } from "../Context/CartContext";
 import ProfilePopup from "../Popup/ProfilePopup";
 import Modal from "../Popup/Modal";
+import Logo from "../../assets/logo.svg"
 
 const Home = () => {
   const [autoplay, setAutoplay] = useState(true);
@@ -60,7 +61,7 @@ const Home = () => {
         <nav class="navbar navbar-expand-sm ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="\src\assets\logo.svg" alt="logo" />
+              <img src={Logo} alt="logo" />
             </a>
             <button
               class="navbar-toggler"
